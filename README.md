@@ -1,0 +1,1 @@
+This script can be imported into any Google Apps Script.
