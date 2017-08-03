@@ -1,0 +1,18 @@
+<html>
+<head>
+  <?!= include('Styles.css') ?>
+</head>
+<body>
+  <h1><?= title ?></h1>
+  <? if (error) { ?>
+    <p> <span class="error-text">An error has occurred: <?= error ?>.</span></p>
+    <p>You may close this tab.</p>
+  <? } else if (isAuthorized) { ?>
+    <p> <span class="all-clear-text">Authorization complete!</span>
+      Your spreadsheet is now connected to Podio. You may close this tab.</p>
+  <? } else { ?>
+    <p> <span class="error-text">Authorization denied.</span>
+      An error occured. Please close this tab and try again.</p>
+  <? } ?>
+</body>
+</html>
