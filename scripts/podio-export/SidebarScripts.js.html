@@ -1,0 +1,9 @@
+<script>
+$(function() {
+    $('#refresh').on('click', function(){ refresh() });
+});
+
+function refresh() {
+    google.script.run.getSubscriberData();
+}
+</script>
